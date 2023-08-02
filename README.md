@@ -10,7 +10,7 @@
 ## Описание работы
 Логика программы реализована на двух основных функциях: `CalcResultArrLen` и `CreateArrMaxStrLen`.
 Первая проходится по элементам исходного массива, и если длина строки меньше или равна максимально допустимой, то переменная длины нового массива инкрементируется. После прохода всего массива возвращается итоговая длина:
-```
+```c#
 int CalcResultArrLen(string[] strArr, int maxLen)
 {
     int resultArrLen = 0;
@@ -23,7 +23,7 @@ int CalcResultArrLen(string[] strArr, int maxLen)
 }
 ```
 Вторая функция `CreateArrMaxStrLen` создает новый массив на основе посчитанной длины, после чего заново проходится по исходному массиву, и если элемент подходит под условие, то он добавляется в новый массив:
-```
+```c#
 string[] CreateArrMaxStrLen(string[] strArr, int maxLen)
 {
     int resultArrLen = CalcResultArrLen(inputStringArr, maxLength);
